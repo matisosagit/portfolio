@@ -1,0 +1,19 @@
+.App {
+  display: grid;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: wrap;
+  grid-template-areas: 
+  "navbar"
+  "sobremi"
+  "proy"
+  "contacto"
+}
+
+
+
+
+
+
+
