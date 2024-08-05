@@ -20,7 +20,7 @@ export  const Navbar = () => {
   };
     return <div className="navbar">
         <div className="linkss">
-            <Link to="/#ini" onClick={() => handleScroll('ini')} className="nosub">Inicio</Link>
+        <Link to="#ini" target="_blank" onClick={(event) => {event.preventDefault(); window.open(this.makeHref("#ini"));}} >Inicio</Link>
             <Link to="/#proyec"  onClick={() => handleScroll('proyec')} className="nosub">
                 Proyectos <Books size={25} />
             </Link>

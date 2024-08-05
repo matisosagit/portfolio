@@ -19,7 +19,7 @@ export const Inicio = () =>{
                     <Code size={40} />
             </article>
                 <div className="links">
-                    <a className="logo" href="https://github.com/matisosagit" target="_blank" ><GithubLogo size={40} /></a>
+                    <a className="logo" href="https://github.com/matisosagit" target="_blank"  ><GithubLogo size={40} /></a>
                     <a className="logo" href="https://www.linkedin.com/in/matias-sosa-330488293/" target="_blank"><LinkedinLogo size={40} /></a>
                     <a className="logo" href="https://drive.google.com/file/d/1k84lsXPFKwJVwyNXT8Sv7tKF4T6YuCYl/view" target="_blank"><FileArrowDown size={40} /></a>
                     <a className="logo" href="https://wa.me/+59896474382" target="_blank"><WhatsappLogo size={40} /></a>
