@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import { Books } from "phosphor-react";
 import { Phone } from "phosphor-react";
 import "./navbar.css";
@@ -7,10 +7,11 @@ import "./navbar.css";
 
 export  const Navbar = () => {
     const location = useLocation();
+    const history = useHistory();
 
   const handleScroll = (id) => {
     if (location.pathname !== '/') {
-      window.location.href = `/#${id}`;
+      history.push(`/#${id}`);
     } else {
       const element = document.getElementById(id);
       if (element) {
