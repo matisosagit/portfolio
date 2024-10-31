@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.87d03328.css",
+    "main.js": "/portfolio/static/js/main.fcd674db.js",
+    "static/media/holfondo.png": "/portfolio/static/media/holfondo.3e9a4530847192966dae.png",
+    "static/media/code2.jpg": "/portfolio/static/media/code2.bcc795e53e01edb9a8b5.jpg",
+    "static/media/fondotext.jpg": "/portfolio/static/media/fondotext.906f9392a6f25caf9f2c.jpg",
+    "static/media/yoo.png": "/portfolio/static/media/yoo.6ddd9276161bb2dcc3f0.png",
+    "static/media/nodeexpress.png": "/portfolio/static/media/nodeexpress.8716a89d425278ea7bc4.png",
+    "static/media/tso.jpeg": "/portfolio/static/media/tso.89f31d88b186b400485c.jpeg",
+    "static/media/js.webp": "/portfolio/static/media/js.1053926cf2f54323bdc1.webp",
+    "static/media/api.jpg": "/portfolio/static/media/api.6c2f40e40b6f33d7e4d3.jpg",
+    "static/media/react.webp": "/portfolio/static/media/react.2a0cac33f155e4a27216.webp",
+    "index.html": "/portfolio/index.html",
+    "main.87d03328.css.map": "/portfolio/static/css/main.87d03328.css.map",
+    "main.fcd674db.js.map": "/portfolio/static/js/main.fcd674db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87d03328.css",
+    "static/js/main.fcd674db.js"
+  ]
+}
