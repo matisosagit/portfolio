@@ -3,9 +3,9 @@
 
 .contacto{
     display: flex;
-    position:absolute;
-    width: 100% ;
-    height: 100%;
+    position:relative;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     justify-content: space-evenly;
@@ -14,28 +14,28 @@
     list-style: none;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../img/code2.jpg) no-repeat center center fixed;
     background-size: cover;
-    margin-top: 200vh;
     flex-direction: column;
+    overflow: auto;
+    font-size: clamp(.5rem,  1rem, 3rem);
 }
 
 form{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
     justify-items: center;
     border-radius: 10%;
+    font-size: clamp(.5rem,  1.5rem, 4rem);
 }
 
 form h1{
-    font-size: 3rem;
+    font-size: clamp(.8rem, 1vw + 2rem, 3rem);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 700;
     font-style: normal;
     color: #243a69;
-    text-shadow: 6px 6px 6px #243a69;
+    text-shadow: 3px 3px 3px #f4f4f2da;
 }
 
 form label{
@@ -87,8 +87,13 @@ button{
     5px 5px 5px #5b88a5;
 }
 
-@media screen and (max-width:500px){
-    .contacto{
-        margin-top: 200vh;
+
+@media screen and (max-width:800px) {
+    .buttom{
+        width: 1rem;
+    }
+
+    .mensaje, form input, form label {
+        width: auto;
     }
 }

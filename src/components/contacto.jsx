@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import "./contacto.css";
 
-export const Contacto = () => {
+export default function Contacto() {
     const form = useRef();
     const [message, setMessage] = useState('');
 
@@ -25,11 +25,11 @@ export const Contacto = () => {
             <form ref={form} onSubmit={sendEmail}>
                 <h1>Contacto</h1>
                 <label htmlFor="nombre">Nombre:</label>
-                <input className="nombre" type="text" name="user_name" />
+                <input className="nombre"  type="text" name="user_name" required/>
                 <label htmlFor="correo">Correo:</label>
-                <input className="correo" type="email" name="user_email" />
+                <input className="correo" type="email" name="user_email" required/>
                 <label htmlFor="mensaje">Mensaje:</label>
-                <textarea className="mensaje" name="message" />
+                <textarea className="mensaje" name="message" required/>
                 <input type="submit" className='enviar' value="Enviar" />
             </form>
             {message && <p>{message}</p>}

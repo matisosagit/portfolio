@@ -2,93 +2,143 @@
 
 .proy{
     display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     top: 0;
+    left: 0;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     align-content: center;
     list-style: none;
-    background: linear-gradient(rgba(233, 228, 228, 0.5), rgba(170, 166, 166, 0.5)), url(../img/fondotext.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(233, 228, 228, 0.5), rgba(170, 166, 166, 0.5)), url(../img/fondotext.jpg) no-repeat center center;
     background-size: cover;
-    margin-top: 100vh;
-    object-fit:scale-down;
+    margin-top: auto;
+    overflow: auto;
 }
 
 .proyectoslista{
     display: flex;
-    position: absolute;
+    position: relative;
+    height: 60%;
     flex-direction: column;
     align-items: center;
     align-content: center;
+    justify-items: center;
+    justify-content: center;
     background-size: cover;
 }
 
 .main{
     display: flex;
     flex: 1;
-    flex-direction: row;
-    gap: 3rem;
+    gap: 4rem;
     flex-wrap: wrap;
     left: 0;
     width: 100%;
     justify-content: center;
 }
 
-.main article{
-    margin: 1rem;
-}
+
 
 .proyect{
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: clamp(.8rem, 1vw + 2rem, 3rem);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 700;
     font-style: normal;
     color: #243a69;
     text-shadow: 3px 3px 3px #f4f4f2da;
 }
 
 
+.logo2{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo2:hover{
+    color: aqua;
+    transition: ease .2s;
+}
+
+.logo2:not(:hover){
+    transition: ease .2s;
+}
+
+
 .hol{
     display:flex;
     position: relative;
-    width: 40ch;
     background-attachment: fixed;
     color: #f4f4f2;
     text-shadow:5px 5px 5px #000;
     flex-wrap: wrap;
     object-fit:cover;
+    overflow: auto;
+    flex-direction: column;
     gap: 3rem;
     filter:drop-shadow(0px 0px 20px #243a69);
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    overflow-wrap: break-word; 
 }
 
 .hol p{
-    max-width: 250px;
+    font-size: clamp(.8rem,  0.9rem, 1.5rem);
+    overflow-wrap: break-word;
+    max-width: 500px;
 }
 
 #hol1{
+    display: flex;
+    position: relative;
+    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(49, 48, 48, 0.5)), url(../img/holfondo.png) no-repeat center center;
     background-size:cover;
-    height: 50ch;
     flex-direction: column;
+    color: #f4f4f2;
+    text-shadow:5px 5px 5px #000;
+    object-fit:cover;
+    overflow: auto;
+    gap: 3rem;
+    filter:drop-shadow(0px 0px 20px #243a69);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow-wrap: break-word; 
 }
 
 #hol2{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(49, 48, 48, 0.5)), url(../img/api.jpg) no-repeat center center;
     background-size:cover;
-    height: 50ch;
+    height: 100%;
     flex-direction: column;
 }
 
+#hol3{
+    display: flex;
+    position: relative;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(49, 48, 48, 0.5)), url(../img/tso.jpeg) no-repeat center center;
+    background-size:cover;
+    flex-direction: column;
+    color: #f4f4f2;
+    text-shadow:5px 5px 5px #000;
+    object-fit:cover;
+    overflow: auto;
+    gap: 3rem;
+    filter:drop-shadow(0px 0px 20px #243a69);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow-wrap: break-word; 
+}
 
 .hol:hover{
-    scale: 1.1;
+    scale: 1.01;
     transition:all .3s;
 }
 
@@ -113,6 +163,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    filter: drop-shadow(1px 1px 10px #fff);
 }
 .foot img{
     max-width: 40px;
@@ -134,23 +185,13 @@
         max-width: 30px;
         flex-wrap: wrap;
     }
-    .hol p{
-        max-width: 300px;
-        max-height: 200px;
-        font-size: 12px;
-    }
+
     .hol img{
         max-height: 8rem;
     }
-    .proyect{
-        font-size: 2rem;
-    }
+
     .main{
-        display: grid;
         gap: 4rem;
         background-size: cover;
-    }
-    .hol{
-        max-block-size: 10rem;
     }
 }
