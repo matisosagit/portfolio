@@ -16,9 +16,9 @@ export default function Proyectos (){
                 <article className="hol" id="hol3">
                     <header>Service Online</header>
                     <p>App web ideada para la gestión de pequeños servicios técnicos.
-                        Permite registrar empresas, guarrrrdarr info de clientes,<br />
-                        gestionar inforrmación y tiene un panel para que los clientes<br />
-                        puedan ver el estado de su reparación
+                        Permite registrar empresas, guardar info de clientes,<br />
+                        gestionar información y tiene un panel para que los clientes<br />
+                        puedan ver el estado de su reparación.
                     </p>
                     <footer className="foot">
                         <li className="tec"><img src={node} alt="Node y Express"/></li>
