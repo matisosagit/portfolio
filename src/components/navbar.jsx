@@ -32,7 +32,7 @@ export  const Navbar = () => {
 
   const handleScroll = (id) => {
     if (location.pathname !== '/') {
-      navigate.push(`/#${id}`);
+      navigate(`/#${id}`);
     } else {
       const element = document.getElementById(id);
       if (element) {

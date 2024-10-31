@@ -7,7 +7,7 @@ import node from "../img/nodeexpress.png";
 import react from "../img/react.webp";
 import {GithubLogo} from "phosphor-react";
 
-export default function Proyectos (){
+export default function Proyectos() {
     return <div id="proyec" className="proy">
         <div className="proyectoslista">
         <header className="proyect">Proyectos</header>
