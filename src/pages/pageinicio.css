@@ -1,12 +1,11 @@
 
 .pageinicioo{
-        display: grid;
-        position: fixed;
-        grid-template-rows:  0fr 0.8fr;
-        width: 100%;
-        height: calc(100% - 60px);
-        margin-top: 60px;
-        overflow: auto;
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        margin-top: 0;
+        overflow-y: scroll;
+        min-height: 100vh;
+        flex-direction: column;
         top: 0;
-        left: 0;
 }

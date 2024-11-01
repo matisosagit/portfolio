@@ -3,8 +3,8 @@
 .proy{
     display: flex;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     top: 0;
     left: 0;
     justify-content: center;
@@ -15,7 +15,6 @@
     background: linear-gradient(rgba(233, 228, 228, 0.5), rgba(170, 166, 166, 0.5)), url(../img/fondotext.jpg) no-repeat center center;
     background-size: cover;
     margin-top: auto;
-    overflow: auto;
 }
 
 .proyectoslista{
@@ -74,7 +73,7 @@
     background-attachment: fixed;
     color: #f4f4f2;
     text-shadow:5px 5px 5px #000;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     object-fit:cover;
     overflow: auto;
     flex-direction: column;
@@ -175,10 +174,9 @@
         display: flex;
         justify-content: center;
         justify-items: center;
-        flex-wrap: wrap;
-        max-width: 22rem;
-        max-height: 23rem;
+        flex-wrap: nowrap;
         background-size: cover;
+        max-height: fit-content;
         gap: 0;
     }
     .hol .foot img{
