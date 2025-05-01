@@ -25,7 +25,7 @@ export default function Inicio () {
                         <div className="links">
                             <a className="logo" href="https://github.com/matisosagit" target="_blank" rel="noopener" ><GithubLogo size={40} alt="github"/></a>
                             <a className="logo" href="https://www.linkedin.com/in/matias-sosa-330488293/" target="_blank" rel="noopener"><LinkedinLogo size={40} alt="linkedin"/></a>
-                            <a className="logo" href="https://drive.google.com/file/d/1wpxGgS365yfm3l4o3LpscqHY3Z-O6IBx/view?usp=sharing" target="_blank" rel="noopener"><FileArrowDown size={40} alt="cv"/></a>
+                            <a className="logo" href="https://drive.google.com/file/d/1tcEovqzzchPaj2KAikdT-F5j8y8fMmaC/view?usp=sharing" target="_blank" rel="noopener"><FileArrowDown size={40} alt="cv"/></a>
                             <a className="logo" href="https://wa.me/+59896474382" target="_blank"><WhatsappLogo size={40} /></a>
                     </div>
                 </article>
